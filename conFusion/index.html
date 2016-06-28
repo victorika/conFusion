@@ -15,11 +15,6 @@
 
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap-social.css" rel="stylesheet">
-  <style>
-      strong {
-        color: white;
-        }
-  </style>
 </head>
 
 <body>
@@ -81,7 +76,7 @@
                             <div class="checkbox">
                                 <label class="checkbox-inline">
                                     <input type="checkbox" name="remember" value="">
-                                    <strong>Remember me</strong>
+                                    <strong style="color:white;">Remember me</strong>
                                 </label>
                             </div>
                         </div>
@@ -109,7 +104,7 @@
 
                 <div class="col-xs-12 col-sm-2">
                     <p style="padding:40px;"></p>
-                    <button type="button" class="btn btn-warning btn-block">Reserve Table</button>
+                    <a href="#table"><button type="button" class="btn btn-warning">Reserve Table</button></a>
                 </div>
 
             </div>
@@ -195,6 +190,68 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="row row-content">
+            <section id="table">
+                    <div class="col-xs-12 col-sm-3">
+                            <p style="padding:100px:"></p>
+                            <h3 align=center>Reserve a Table</h3>
+                            <p style="padding:100px:"></p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-9">
+                            <form class="form-horizontal" >
+                                <div class="form-group form-inline">
+                                    <label for="Guests" class="col-sm-2 control-label">Number of Guests</label>
+                                    <div class="col-sm-10">
+                                        <label class="radio-inline"><input type="radio" name="Guests">1</label>
+                                        <label class="radio-inline"><input type="radio" name="Guests">2</label>
+                                        <label class="radio-inline"><input type="radio" name="Guests">3</label>
+                                        <label class="radio-inline"><input type="radio" name="Guests">4</label>
+                                        <label class="radio-inline"><input type="radio" name="Guests">5</label>
+                                        <label class="radio-inline"><input type="radio" name="Guests">6</label>
+                                    </div>               
+                                </div>
+                            
+
+                            
+                                <label class="col-sm-2 control-label">Date and Time</label>
+                                <div class="col-sm-10">
+                                    <div class="form-group form-inline col-sm-6">
+                                        <div class="form-group has-feedback form-inline">
+                                                <label class="control-label" for="date"></label>
+                                                <input type="date" class="form-control" id="date" placeholder="Date">
+                                                <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-inline col-sm-6">
+                                        <div class="form-group has-feedback form-inline">
+                                            <label class="control-label" for="time"></label>
+                                            <input type="time" class="form-control" id="time" placeholder="Time">
+                                            <span class="glyphicon glyphicon-time form-control-feedback"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-inline">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-primary" href="#">Reserve</button>
+                                    </div>               
+                                </div>
+                            </form>
+
+
+                            <div class="alert alert-warning alert-dismissible" role="alert">
+                                <buton type="buton" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span> 
+                                </buton>
+                                <strong>Warning:</strong> Please
+                                <a href="tel:+85212345678" class="alert-link"> call</a> us to reserve for more than six guests.
+                            </div>
+
+                        </div>
+                </section>
         </div>
     </div>
 
